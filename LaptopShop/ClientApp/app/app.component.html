@@ -1,0 +1,29 @@
+
+<nav class="navbar navbar-dark navbar-expand-md bg-dark text-uppercase navigation-clean">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/" >Luke's Laptops Ltd</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" routerLink="/"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/checkout"><i class="fa fa-shopping-basket"></i>&nbsp;Basket<span>&nbsp;({{data.basket.length}})</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<div class="footer-basic">
+    <footer class="text-uppercase text-light bg-dark p-3">
+        <div class="social"><a routerLink="/"><i class="icon ion-social-instagram"></i></a><a routerLink="/"><i class="icon ion-social-snapchat"></i></a><a routerLink="/"><i class="icon ion-social-twitter"></i></a><a routerLink="/"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a routerLink="/">Home</a></li>
+            <li class="list-inline-item"><a routerLink="/">Services</a></li>
+            <li class="list-inline-item"><a routerLink="/">About</a></li>
+            <li class="list-inline-item"><a routerLink="/">Terms</a></li>
+            <li class="list-inline-item"><a routerLink="/">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">LApTOPS LTD © 2021</p>
+    </footer>
+</div>
+

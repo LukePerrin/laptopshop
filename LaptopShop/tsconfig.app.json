@@ -1,0 +1,18 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+
+/*Put compiled temp files into out-tsc/app*/
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./wwwroot/clientapp/out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "ClientApp/main.ts",
+    "ClientApp/polyfills.ts"
+  ],
+  "include": [
+    "ClientApp/**/*.d.ts"
+  ]
+}

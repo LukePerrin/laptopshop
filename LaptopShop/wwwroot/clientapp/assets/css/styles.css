@@ -1,0 +1,35 @@
+.marketing .laptop-img {
+  width: 400px;
+  height: 300px;
+}
+
+.config {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.config-select {
+  cursor: pointer;
+  margin: 5px;
+}
+
+.payment-form {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .payment-form {
+    /*width: 50%;*/
+  }
+}
+
+.total-order {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .total-order {
+    /*width: 50%;*/
+  }
+}
+

@@ -1,0 +1,77 @@
+<div class="container d-flex flex-column align-items-center p-3">
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div *ngIf="basket.length == 0">
+                <h4>No items in your basket</h4>
+            </div>
+            <div *ngFor="let item of basket" class="card shadow mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4 text-center"><img class="img-fluid border rounded shadow" src="clientapp/assets/img/{{item.image}}"></div>
+                        <div class="col">
+                            <p class="mt-2"><strong>{{item.description}} Laptop</strong></p>
+                            <p class="mt-2">Base Unit: {{item.basePrice | currency:"GBP"}}</p>
+                            <p class="mt-2">RAM: {{item.ramCode}} {{item.ramprice | currency:"GBP"}}</p>
+                            <p class="mt-2">HDD: {{item.hardDiskCode}} {{item.hddprice | currency:"GBP"}}</p>
+                            <p class="mt-2">Colour: {{item.colourDescription}} {{item.colourprice | currency:"GBP"}}</p>
+                            <p class="mt-2">CPU: {{item.cpuDescription}} {{item.cpuprice | currency:"GBP"}}</p>
+                            <p class="mt-2"><strong>Total Price: {{item.totalPrice | currency:"GBP"}}</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 18px;"><strong>Gross Total</strong></p>
+                        </div>
+                        <div class="col text-right">
+                            <p style="font-size: 18px;"><strong>{{grossTotal | currency:"GBP"}}</strong></p>
+                        </div>
+                    </div>
+                    <hr style="background-color: #323232;">
+                    <form ngNativeValidate class="text-left payment-form">
+                        <div class="form-group"><label for="username">Full name (on the card)</label><input class="form-control" type="text" name="username" placeholder="John Doe" required=""></div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend"></div><input class="form-control" type="text" name="cardnumber" placeholder="Your card number" required="">
+                                <div class="input-group-append"><span class="input-group-text input-group-text text-muted"><i class="fa fa-cc-visa mx-1"></i><i class="fa fa-cc-amex mx-1"></i><i class="fa fa-cc-mastercard mx-1"></i></span></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-8">
+                                <div class="form-group">
+                                    <label>Expiration</label>
+                                    <div class="input-group"><input class="form-control" type="number" placeholder="MM" required=""><input class="form-control" type="number" placeholder="YY" required=""></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group"><label data-toggle="tooltip" data-bs-tooltip="" title="Three-digits code on the back of your card">CVV&nbsp;<i class="fa fa-question-circle"></i></label><input class="form-control" type="text" required=""></div>
+                            </div>
+                        </div>
+                        <div class="text-center"><button class="btn btn-primary" data-target="#upgrade-modal" data-toggle="modal" type="submit">Buy Now</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" role="dialog" tabindex="-1" id="upgrade-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Luke's Laptops Ltd</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+                <p>To continue please upgrade to the full version. We offer a&nbsp;<br>complete e-commerce fulfilment solution! SSL, Online Payments, and more!&nbsp;<i class="fa fa-smile-o"></i></p>
+            </div>
+            <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+        </div>
+    </div>
+</div>
+

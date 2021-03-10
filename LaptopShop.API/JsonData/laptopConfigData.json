@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "type": "RAM",
+    "price": 45.67,
+    "description": "8GB",
+    "code": "8GB"
+  },
+  {
+    "id": 2,
+    "type": "RAM",
+    "price": 87.88,
+    "description": "16GB",
+    "code": "16GB"
+  },
+  {
+    "id": 3,
+    "type": "HDD",
+    "price": 123.34,
+    "description": "500GB",
+    "code": "500GB"
+  },
+  {
+    "id": 4,
+    "type": "HDD",
+    "price": 200.00,
+    "description": "1TB",
+    "code": "1TB"
+  },
+  {
+    "id": 5,
+    "type": "Colour",
+    "price": 50.76,
+    "description": "Red",
+    "code": "red"
+  },
+  {
+    "id": 6,
+    "type": "Colour",
+    "price": 34.56,
+    "description": "Blue",
+    "code": "blue"
+  },
+  {
+    "id": 7,
+    "type": "CPU",
+    "price": 40.00,
+    "description": "Intel Core i3",
+    "code": "i3"
+  },
+  {
+    "id": 8,
+    "type": "CPU",
+    "price": 60.00,
+    "description": "Intel Core i7",
+    "code": "i7"
+  }
+]

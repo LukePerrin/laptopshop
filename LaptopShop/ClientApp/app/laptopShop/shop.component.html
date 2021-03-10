@@ -1,0 +1,29 @@
+
+
+<div class="container marketing">
+    <h1 class="text-center m-2">The UK's #1 Resource for Laptops</h1>
+    <h3 class="text-center m-2">Select your laptop and proceed to configuration</h3>
+    <div *ngFor="let productRow of productRows" class="row">
+
+
+        <div *ngFor="let product of productRow.row" class="col text-center p-2">
+            <img class="laptop-img" src="clientapp/assets/img/{{product.image}}" alt="{{product.title}} Laptop">
+            <div>
+                <h3>{{product.title}}  {{product.price | currency:"GBP"}}</h3><a (click)="goToDetails(product)" class="btn btn-primary align-self-center">Configure</a>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="errorMessage != ''" class="alert alert-success" role="alert">
+        <span>
+            <strong>{{errorMessage}}</strong>
+        </span>
+        <div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+<!--<router-outlet></router-outlet>-->

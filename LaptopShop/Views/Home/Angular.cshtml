@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section scripts
+{
+
+    <script src="~/clientapp/runtime.js"></script>
+    <script src="~/clientapp/polyfills.js"></script>
+    <script src="~/clientapp/vendor.js"></script>
+    <script src="~/clientapp/main.js"></script>
+
+    <!-- the issue with es2015 during development is that ng build --watch generates the es5 output above, where as
+        ng build generates the output below... which is inconsistent for development. This is despite es2015 targeted in tsconfig
+        so sticking with es5 for now. No harm in switching back to es2015 for real word production but for this assignment es5 is ok-->
+
+    @*<script src="~/clientapp/runtime-es5.js" nomodule defer></script>
+        <script src="~/clientapp/polyfills-es5.js" nomodule defer></script>
+        <script src="~/clientapp/vendor-es5.js" nomodule defer></script>
+        <script src="~/clientapp/main-es5.js" nomodule defer></script>
+
+        <script src="~/clientapp/runtime-es2015.js" type="module"></script>
+        <script src="~/clientapp/polyfills-es2015.js" type="module"></script>
+        <script src="~/clientapp/vendor-es2015.js" type="module"></script>
+        <script src="~/clientapp/main-es2015.js" type="module"></script>*@
+
+}
+
+<app-root>
+
+</app-root>

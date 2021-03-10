@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Title": "Dell",
+    "Price": 349.87,
+    "Image": "dell.jpg"
+  },
+  {
+    "Id": 2,
+    "Title": "HP",
+    "Price": 456.76,
+    "Image": "hp.jpg"
+  },
+  {
+    "Id": 3,
+    "Title": "Surface Pro",
+    "Price": 700,
+    "Image": "surface.png"
+  },
+  {
+    "Id": 4,
+    "Title": "Toshiba",
+    "Price": 345.67,
+    "Image": "toshiba.jpg"
+  }
+]

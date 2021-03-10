@@ -1,0 +1,12 @@
+Domain/bin/
+Domain/obj/
+LaptopShop.API/bin/
+LaptopShop.API/obj/
+LaptopShop/bin/
+LaptopShop/node_modules/@angular/common/locales/extra/root.d.ts
+LaptopShop/node_modules/
+Persistence/obj/
+Persistence/bin/
+NUnitTestProject/obj/
+NUnitTestProject/bin/
+LaptopShop/obj/
